@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="Home.aspx" title="Home" description="Home Page">
+	<siteMapNode url="Category.aspx" title="Category" description="View our menu">
+		<siteMapNode url="Category.aspx?type=IT" title="Information Technology"  description="" />
+		<siteMapNode url="Category.aspx?type=Cooking" title="Cooking Book"  description="" />
+	</siteMapNode>
+	<siteMapNode url="Order.aspx" title="Order"  description="Place an order">		
+		<siteMapNode url="YourCart.aspx" title="Cart"  description="View the shopping cart" />
+		<siteMapNode url="Checkout.aspx" title="Checkout"  description="Place your order" />
+	</siteMapNode>
+		<siteMapNode url="Delivery.aspx" title="Delivery"  description="Delivery areas and charges" />
+		<siteMapNode url="Links.aspx" title="Links"  description="Book Web sites" />
+		<siteMapNode url="Contact.aspx" title="Contact"  description="Contact details" />
+		<siteMapNode url="Login.aspx" title="Admin" description="Edit book"/>
+	</siteMapNode>
+</siteMap>

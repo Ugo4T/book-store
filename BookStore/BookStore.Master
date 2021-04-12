@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BookStore.Master.cs" Inherits="BookStore.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+            width: 1478px;
+        }
+        .auto-style2 {
+            width: 1478px;
+        }
+        .auto-style3 {
+            width: 100%;
+            height: 254px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+        </div>
+    <table>
+         <tr>
+            <td class="auto-style1"><a href="#navigation"><img height="1" src="image/header.jpg" 
+                width="1" alt="Skip to Navigation Links" border="0" hspace="0" 
+                title="Skip to Navigation Links" vspace="0" 
+                align="middle" /></a><a href="#content"><img height="1" src="image/header.jpg" 
+                width="1" alt="Skip to Page Content" border="0" hspace="0" 
+                title="Skip to Page Content" vspace="0" 
+                /></a><img src="image/header.jpg" vspace="0" hspace="0" 
+                alt="Pizza Pretty Quick Logo" title="BookStore Logo" class="auto-style3"/>
+            </td>
+         </tr>    
+         <tr>
+            <td height="50" class="auto-style2" style="text-align: center">
+                <asp:Menu ID="Menu2" runat="server" BackColor="#FFFBD6" 
+                    DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" 
+                    Font-Names="Verdana" Font-Size="0.9em" ForeColor="#990000" Height="26px" 
+                    Orientation="Horizontal" StaticDisplayLevels="2" 
+                    StaticSubMenuIndent="20px" Width="100%" OnMenuItemClick="Menu2_MenuItemClick">
+                    <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#FFFBD6" />
+                    <DynamicSelectedStyle BackColor="#FFCC66" />
+                    <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#FFCC66" />
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            </td>
+         </tr>
+         <tr>
+            <td class="auto-style1">
+                <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+                    Content<br />Content<br />Content<br />Content<br />Content<br />
+                </asp:contentplaceholder>
+							<!--<span style="color: #999999">You are here:</span> &nbsp;-->
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em"
+                  PathSeparator=" : ">
+                    <PathSeparatorStyle Font-Bold="False" ForeColor="#990000" />
+                    <CurrentNodeStyle ForeColor="#333333" />
+                    <NodeStyle Font-Bold="False" ForeColor="#990000" />
+                    <RootNodeStyle Font-Bold="False" ForeColor="#FF8000" />
+                </asp:SiteMapPath>
+            </td>
+         </tr>
+         <tr>
+            <td class="auto-style2">
+           
+		    </td>
+         </tr>
+      </table>
+    </form>
+</body>
+</html>
